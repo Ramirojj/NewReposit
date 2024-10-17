@@ -45,7 +45,10 @@
  else if (resp == "2")
  {
 StreamReader sr = new StreamReader("data.txt");
+string line ;
+while((line = sr.ReadLine())!= null){
 
+}
 
 
 }

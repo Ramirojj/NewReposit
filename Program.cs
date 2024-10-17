@@ -47,6 +47,9 @@
 StreamReader sr = new StreamReader("data.txt");
 string line ;
 while((line = sr.ReadLine())!= null){
+string[] parts = line.Split(',');
+string datePart = parts[0];
+string sleepData = parts[1];
 
 }
 

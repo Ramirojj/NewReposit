@@ -51,7 +51,7 @@ string[] parts = line.Split(',');
 string datePart = parts[0];
 string sleepData = parts[1];
 DateTime weekStartDate = DateTime.Parse(datePart);
-
+string[] sleepHourArray = sleepData.Split('|');
 
 }
 

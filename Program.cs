@@ -52,6 +52,17 @@ string datePart = parts[0];
 string sleepData = parts[1];
 DateTime weekStartDate = DateTime.Parse(datePart);
 string[] sleepHourArray = sleepData.Split('|');
+Console.WriteLine($"\nWeek of  {weekStartDate:MMM, dd, yyyy}");
+Console.WriteLine("Su Mo Tu  we Th Fr Sa");
+Console.WriteLine("-- -- -- -- -- -- --");
+Console.WriteLine($" {int.Parse(sleepHourArray[0]),2}" +
+
+$"{int.Parse(sleepHourArray[1]),2} " +
+$"{int.Parse(sleepHourArray[2]),2} " +
+$"{int.Parse(sleepHourArray[3]),2}" +
+$"{int.Parse(sleepHourArray[4]),2}" +
+$"{int.Parse(sleepHourArray[5]),2} " +
+$"{int.Parse(sleepHourArray[6]),2}");
 
 }
 
